@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #b7b7d1;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        margin: 15px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        background-color: #bddfe4;
+        border-radius: 30px;
+        border: 2px solid #e0a4a4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>Г. Сковорода</button>
+    <button>Д. Лихачев</button>
+    <button>Горацій</button>
+    <button>Цицерон</button>
+    <button>М. Шумило</button>
+    <script>
+      const quotes = [
+        "Кожному мила своя сторона.",
+        "Усвідомлена любов до свого народу не поєднується з ненавистю до інших.",
+        "Ті, що виїздять за море, міняють небо, а не душу",
+        "Для нас дорогі батьки, дорогі діти, близькі, родичі; але всі уявлення про любов до чого-небудь поєднані в одному слові «вітчизна».",
+        "Мова — це глибина тисячоліть",
+      ];
+      document.querySelectorAll("button").forEach((el, i) => {
+        el.onclick = () => alert(quotes[i]);
+      });
+    </script>
+  </body>
+</html>
